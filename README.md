@@ -1,2 +1,3 @@
-# r0k0.github.io
-I will create page for Python - tinkter.
+<h1>This page is to me for learnin Python - tinkter.</h1>
+<br>
+<p>Still learning, so I will post in future.</p>
