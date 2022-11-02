@@ -50,7 +50,19 @@
       Da biste kreirali novu datoteku i počeli programirati kliknite na File > New File . Otvara se novi prozor. Upišite print("Hello World") , spremite datoteku kliknite i u izborniku kliknite na Run > Run Module F5 .<br>
     </p>
     <hr>
-    
+    <h1>Izrada prvog GUI programa sa tkinter-om</h1>
+    <p>
+      Na ovoj web-stranici ćete naći korisne informacije za početak: <a href="https://www.tutorialspoint.com/python/python_gui_programming.htm">https://www.tutorialspoint.com/python/python_gui_programming.htm</a><br>
+      Da biste mogli koristiti GUI prozor morate uvest biblioteku tkinter. To se radi na način da prva izvršna (ne komentar) linija koda mora biti: 
+      <pre> import tkinter </pre>
+      Možete napisati i "import tkinter as tk" bez navodnika. Što znači da ubuduće svugdje u programu gdje biste napisali tkinter napišete samo tk. npr tk.Tk() . poslje ključne riječi as možete napisati bilo što kao npr. import tkinter as roko i kasnije koristiti roko umjesto tkinter kao npr. roko.Tk(). Ja ću svugdje koristiti tkinter radi lakšeg snalaženja.
+      Sljedeće, stvaranje glavnog prozora: 
+      <pre> root = tkinter.Tk() </pre>
+      Ako ne odredite veličinu prozora. Prozor će se stisnuti oko sadržaja. Da biste napravili glavni prozor određene veličine možete koristiti metodu:
+      <pre> root.geometry("960x600") </pre>
+      Ja ću koristiti veličinu svog ekrana podjeljeno na pola (cjelobrojno djeljenje). Što bi bilo screenX = 1920//2 # 960 , screenY = 1200//2 # 600<br>
+      
+    </p>
 
   </body>
 </html>
