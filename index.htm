@@ -96,42 +96,40 @@
       I tako dalje. Još da napomenem. Sve se pozicionira od gornjeg lijevog kuta glavnog prozora: prema desno (za x koordinatu) i prema dole (za y koordinatu)<br>
       Evo jednog primjer pozicioniranja: (najprije sav kod, pa slika 001)
       <pre>
-      # import tkinter as tk
-      import tkinter
+# import tkinter as tk
+import tkinter
 
-      # help() > tkinter - ispisuje help za tkinter
-      # Alt + PrintScreen - samo aktivni prozor
+# help() > tkinter - ispisuje help za tkinter
+# Alt + PrintScreen - samo aktivni prozor
 
-      # Create the main window
-      root = tkinter.Tk()
-      # dir(root) - ispisuje sve metode koje sadrži root
-      screenX = 1920//2
-      screenY = 1200//2
-      root.minsize(screenX, screenY)
+# Create the main window
+root = tkinter.Tk()
+# dir(root) - ispisuje sve metode koje sadrži root
+screenX = 1920//2
+screenY = 1200//2
+root.minsize(screenX, screenY)
 
-      root.title("Naziv programa - Autor: - Verzija:")
-
-
-
-      # Create widgets
-      label1 = tkinter.Label(root, text="Widget 1 - \"nw\"", bg='red')
-      label2 = tkinter.Label(root, text="Widget 2 - \"sw\"", bg='red')
-      label3 = tkinter.Label(root, text="Widget 3 - \"ne\"", bg='red')
-      label4 = tkinter.Label(root, text="Widget 4 - \"se\"", bg='red')
+root.title("Naziv programa - Autor: - Verzija:")
 
 
-      # Lay out widgets with place()
 
-      label1.place(anchor="nw", width=100, height=50, x=20, y=20)
-      label2.place(anchor="sw", width=100, height=50, x=20, y=screenY-20)
-      label3.place(anchor="ne", width=100, height=50, x=screenX-20, y=20)
-      label4.place(anchor="se", width=100, height=50, x=screenX-20, y=screenY-20)
+# Create widgets
+label1 = tkinter.Label(root, text="Widget 1 - \"nw\"", bg='red')
+label2 = tkinter.Label(root, text="Widget 2 - \"sw\"", bg='red')
+label3 = tkinter.Label(root, text="Widget 3 - \"ne\"", bg='red')
+label4 = tkinter.Label(root, text="Widget 4 - \"se\"", bg='red')
 
-      # Run forever!
-      root.mainloop()
 
-      </pre>
-      <img src="https://raw.githubusercontent.com/R0k0/r0k0.github.io/main/001.jpg" alt="Tkinter - slika 001">
+# Lay out widgets with place()
+
+label1.place(anchor="nw", width=100, height=50, x=20, y=20)
+label2.place(anchor="sw", width=100, height=50, x=20, y=screenY-20)
+label3.place(anchor="ne", width=100, height=50, x=screenX-20, y=20)
+label4.place(anchor="se", width=100, height=50, x=screenX-20, y=screenY-20)
+
+# Run forever!
+root.mainloop()</pre>
+      <img src="https://raw.githubusercontent.com/R0k0/r0k0.github.io/main/001.jpg" alt="Tkinter - slika 001"><br>
       I na kraju da bi program uopće radio treba pokrenut petlju sa sljedećim kodom:
       <pre> root.mainloop() </pre>
     </p>
