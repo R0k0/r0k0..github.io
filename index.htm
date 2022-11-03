@@ -79,9 +79,10 @@
       # Create widgets
       label1 = tkinter.Label(root, text="Widget 1 - \"nw\"", bg='red')
       </pre>
+      Na sljedećem linku možete naći više o labeli: <a href="https://www.tutorialspoint.com/python/tk_label.htm">https://www.tutorialspoint.com/python/tk_label.htm</a><br>
       Sljedeće pozicioniranje labele1 na glavnom prozoru:
       <pre> label1.place(anchor="nw", width=100, height=50, x=20, y=20) </pre>
-      Na sljedećem linku možete naći više o labeli: <a href="https://www.tutorialspoint.com/python/tk_label.htm">https://www.tutorialspoint.com/python/tk_label.htm</a><br>
+      Na sljedećem linku možete naći više o place() metodi: <a href="https://www.tutorialspoint.com/python/tk_place.htm">https://www.tutorialspoint.com/python/tk_place.htm</a><br>
       Bitno je spomenuti da place() metoda pozicioira objekt u ovom slučaju labelu kamo vi odaberete na glavnom prozoru.<br>
       Može se pozicionirati sa parametrima (opcijama) x i y (apsolutno u odnosu na anchor u px) ili relx i rely (relativno u odnosu na anchor u postocima tj. od 0.0 do 1.0 (što je isto kao od 0% do 100%)). Npr. ako želite pomaknuti za 10% napisati ćete 0.1 ili ako želite pomaknuti za 1% napisati ćete 0.01<br>
       x, y i relx, rely rade jedno te isto. Tako da ako ih zajedno stavite u parametre jedan od njih će pobiti drugog tj. samo jedan će biti aktivan. Pa najbolje da odaberete samo jedan od tih dva (absolutni ili relativni) načina za parametre.<br>
